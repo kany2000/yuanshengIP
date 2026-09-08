@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO 01 - kanlee"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO 01 - kanlee"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },

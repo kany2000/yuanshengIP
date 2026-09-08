@@ -19,69 +19,12 @@ proxies:
 - name: 🇧🇬 BG 02 - kanlee
   type: vless
   server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
-- name: 🇧🇬 BG 03 - kanlee
-  type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
-- name: 🇧🇬 BG 04 - kanlee
-  type: vless
-  server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 05 - kanlee
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 06 - kanlee
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 192.145.31.5
-- name: 🇧🇬 BG 07 - kanlee
-  type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,11 +32,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 BG 01 - kanlee
   - 🇧🇬 BG 02 - kanlee
-  - 🇧🇬 BG 03 - kanlee
-  - 🇧🇬 BG 04 - kanlee
-  - 🇧🇬 BG 05 - kanlee
-  - 🇧🇬 BG 06 - kanlee
-  - 🇧🇬 BG 07 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -101,10 +39,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 BG 01 - kanlee
   - 🇧🇬 BG 02 - kanlee
-  - 🇧🇬 BG 03 - kanlee
-  - 🇧🇬 BG 04 - kanlee
-  - 🇧🇬 BG 05 - kanlee
-  - 🇧🇬 BG 06 - kanlee
-  - 🇧🇬 BG 07 - kanlee
 rules:
 - MATCH,PROXIES
