@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇱🇻 LV 01 - kanlee",
+        "🇱🇻 LV 02 - kanlee",
+        "🇱🇻 LV 03 - kanlee",
+        "🇱🇻 LV 04 - kanlee",
+        "🇱🇻 LV 05 - kanlee"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇱🇻 LV 01 - kanlee",
+        "🇱🇻 LV 02 - kanlee",
+        "🇱🇻 LV 03 - kanlee",
+        "🇱🇻 LV 04 - kanlee",
+        "🇱🇻 LV 05 - kanlee"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

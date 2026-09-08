@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇬🇧 英国 (United Kingdom) 01 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 02 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 03 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 04 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 05 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 06 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 07 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 08 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 09 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 10 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 11 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 12 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 13 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 14 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 15 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 16 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 17 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 18 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 19 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 20 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 21 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 22 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 23 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 24 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 25 - kanlee"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇬🇧 英国 (United Kingdom) 01 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 02 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 03 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 04 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 05 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 06 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 07 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 08 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 09 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 10 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 11 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 12 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 13 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 14 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 15 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 16 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 17 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 18 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 19 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 20 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 21 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 22 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 23 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 24 - kanlee",
+        "🇬🇧 英国 (United Kingdom) 25 - kanlee"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

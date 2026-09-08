@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇸🇨 SC 01 - kanlee",
+        "🇸🇨 SC 02 - kanlee",
+        "🇸🇨 SC 03 - kanlee",
+        "🇸🇨 SC 04 - kanlee",
+        "🇸🇨 SC 05 - kanlee",
+        "🇸🇨 SC 06 - kanlee",
+        "🇸🇨 SC 07 - kanlee",
+        "🇸🇨 SC 08 - kanlee",
+        "🇸🇨 SC 09 - kanlee",
+        "🇸🇨 SC 10 - kanlee",
+        "🇸🇨 SC 11 - kanlee",
+        "🇸🇨 SC 12 - kanlee",
+        "🇸🇨 SC 13 - kanlee"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇸🇨 SC 01 - kanlee",
+        "🇸🇨 SC 02 - kanlee",
+        "🇸🇨 SC 03 - kanlee",
+        "🇸🇨 SC 04 - kanlee",
+        "🇸🇨 SC 05 - kanlee",
+        "🇸🇨 SC 06 - kanlee",
+        "🇸🇨 SC 07 - kanlee",
+        "🇸🇨 SC 08 - kanlee",
+        "🇸🇨 SC 09 - kanlee",
+        "🇸🇨 SC 10 - kanlee",
+        "🇸🇨 SC 11 - kanlee",
+        "🇸🇨 SC 12 - kanlee",
+        "🇸🇨 SC 13 - kanlee"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
