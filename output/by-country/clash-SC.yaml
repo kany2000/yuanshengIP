@@ -5,47 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - kanlee
-  type: vless
-  server: 104.21.55.123
-  port: 2053
-  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: restless-boat-ebf2.moha102030.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: restless-boat-ebf2.moha102030.workers.dev
-- name: 🇸🇨 SC 02 - kanlee
-  type: vless
-  server: 172.67.140.37
-  port: 443
-  uuid: 527451fe-ee1f-4e6f-94ca-808f055f7c9b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/ERYN0G44hia16zhR
-    headers:
-      Host: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
-- name: 🇸🇨 SC 03 - kanlee
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇸🇨 SC 04 - kanlee
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -61,17 +20,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - kanlee
-  - 🇸🇨 SC 02 - kanlee
-  - 🇸🇨 SC 03 - kanlee
-  - 🇸🇨 SC 04 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - kanlee
-  - 🇸🇨 SC 02 - kanlee
-  - 🇸🇨 SC 03 - kanlee
-  - 🇸🇨 SC 04 - kanlee
 rules:
 - MATCH,PROXIES

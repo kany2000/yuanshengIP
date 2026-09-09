@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: laoye.in-gect.fun
+      Host: 89.36.161.222
 - name: 🇱🇻 LV 02 - kanlee
   type: vless
   server: 89.36.161.222
@@ -29,7 +29,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 89.36.161.222
+      Host: laoye.in-gect.fun
 - name: 🇱🇻 LV 03 - kanlee
   type: vless
   server: 89.36.161.222
@@ -42,21 +42,20 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: laoye.in-gect.fun
+      Host: 89.36.161.222
 - name: 🇱🇻 LV 04 - kanlee
   type: vless
-  server: 172.67.67.178
-  port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: rayan-007.nastaran.dpdns.org
+      Host: laoye.in-gect.fun
 - name: 🇱🇻 LV 05 - kanlee
   type: vless
   server: 89.36.161.222
@@ -70,19 +69,6 @@ proxies:
     path: /
     headers:
       Host: laoye.in-gect.fun
-- name: 🇱🇻 LV 06 - kanlee
-  type: vless
-  server: 89.36.161.222
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 89.36.161.222
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,7 +79,6 @@ proxy-groups:
   - 🇱🇻 LV 03 - kanlee
   - 🇱🇻 LV 04 - kanlee
   - 🇱🇻 LV 05 - kanlee
-  - 🇱🇻 LV 06 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,6 +89,5 @@ proxy-groups:
   - 🇱🇻 LV 03 - kanlee
   - 🇱🇻 LV 04 - kanlee
   - 🇱🇻 LV 05 - kanlee
-  - 🇱🇻 LV 06 - kanlee
 rules:
 - MATCH,PROXIES
