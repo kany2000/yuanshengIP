@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - kanlee
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -19,18 +19,50 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - kanlee
   type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: web-socket.tgdaosheng.ggff.net
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - kanlee
+  type: ss
+  server: 188.208.110.58
+  port: 8444
+  cipher: chacha20-ietf-poly1305
+  password: tunnel-astrovpn_official
+  udp: true
+- name: 🇦🇪 阿联酋 (UAE) 04 - kanlee
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - kanlee
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +70,9 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - kanlee
   - 🇦🇪 阿联酋 (UAE) 02 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 03 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 04 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 05 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +80,8 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - kanlee
   - 🇦🇪 阿联酋 (UAE) 02 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 03 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 04 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 05 - kanlee
 rules:
 - MATCH,PROXIES
