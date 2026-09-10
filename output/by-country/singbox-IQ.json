@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR 01 - kanlee"
+        "🇮🇶 IQ 01 - kanlee",
+        "🇮🇶 IQ 02 - kanlee",
+        "🇮🇶 IQ 03 - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR 01 - kanlee"
+        "🇮🇶 IQ 01 - kanlee",
+        "🇮🇶 IQ 02 - kanlee",
+        "🇮🇶 IQ 03 - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },

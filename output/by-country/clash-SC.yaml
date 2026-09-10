@@ -14,17 +14,107 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇨 SC 02 - kanlee
+  type: vless
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇸🇨 SC 03 - kanlee
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇨 SC 04 - kanlee
+  type: vless
+  server: 104.18.32.47
+  port: 8443
+  uuid: 4ff70740-8c80-48ae-985f-2afe4924e908
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pubb.clnahanpnln.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: pubb.clnahanpnln.workers.dev
+- name: 🇸🇨 SC 05 - kanlee
+  type: vless
+  server: 45.130.125.96
+  port: 443
+  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dfsuporte.garena.com.ex33r.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-pusat
+    headers:
+      Host: dfsuporte.garena.com.ex33r.eu.cc
+- name: 🇸🇨 SC 06 - kanlee
+  type: vless
+  server: 141.101.123.76
+  port: 443
+  uuid: 3bb6fd82-3a15-eaea-6168-4dac2b70079e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nahan-fog-af01.dfghttr2012.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-fog-af01.dfghttr2012.workers.dev
+- name: 🇸🇨 SC 07 - kanlee
+  type: vless
+  server: 172.67.152.71
+  port: 8880
+  uuid: ed189537-41de-4abe-9f8b-bb75d457722d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lucky-cake-4f58.318-5ee.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - kanlee
+  - 🇸🇨 SC 02 - kanlee
+  - 🇸🇨 SC 03 - kanlee
+  - 🇸🇨 SC 04 - kanlee
+  - 🇸🇨 SC 05 - kanlee
+  - 🇸🇨 SC 06 - kanlee
+  - 🇸🇨 SC 07 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - kanlee
+  - 🇸🇨 SC 02 - kanlee
+  - 🇸🇨 SC 03 - kanlee
+  - 🇸🇨 SC 04 - kanlee
+  - 🇸🇨 SC 05 - kanlee
+  - 🇸🇨 SC 06 - kanlee
+  - 🇸🇨 SC 07 - kanlee
 rules:
 - MATCH,PROXIES
