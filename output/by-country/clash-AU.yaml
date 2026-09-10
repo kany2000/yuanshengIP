@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - kanlee
   type: vless
-  server: 103.75.119.126
-  port: 2087
-  uuid: 731f177e-00aa-480c-b935-661456139a32
+  server: cf10.466688.xyz
+  port: 443
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: mia12.pages.dev
   network: ws
   ws-opts:
-    path: /7586c69d3dc9
+    path: /go.php?ed=2560@https://t.me/QiangLieTuiJian
     headers:
-      Host: 103.75.119.126
+      Host: mia12.pages.dev
 - name: 🇦🇺 澳大利亚 (Australia) 02 - kanlee
   type: vless
   server: 103.75.119.126
@@ -30,6 +31,33 @@ proxies:
     path: /7586c69d3dc9
     headers:
       Host: 103.75.119.126
+- name: 🇦🇺 澳大利亚 (Australia) 03 - kanlee
+  type: vless
+  server: 103.75.119.126
+  port: 2087
+  uuid: 731f177e-00aa-480c-b935-661456139a32
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /7586c69d3dc9
+    headers:
+      Host: 103.75.119.126
+- name: 🇦🇺 澳大利亚 (Australia) 04 - kanlee
+  type: vless
+  server: fq.jp188.dpdns.org
+  port: 443
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fq.jp188.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fq.jp188.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +65,8 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - kanlee
   - 🇦🇺 澳大利亚 (Australia) 02 - kanlee
+  - 🇦🇺 澳大利亚 (Australia) 03 - kanlee
+  - 🇦🇺 澳大利亚 (Australia) 04 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +74,7 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - kanlee
   - 🇦🇺 澳大利亚 (Australia) 02 - kanlee
+  - 🇦🇺 澳大利亚 (Australia) 03 - kanlee
+  - 🇦🇺 澳大利亚 (Australia) 04 - kanlee
 rules:
 - MATCH,PROXIES
