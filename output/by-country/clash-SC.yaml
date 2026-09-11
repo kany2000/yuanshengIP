@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - kanlee
   type: vless
-  server: 172.64.32.103
-  port: 2052
+  server: 162.159.39.218
+  port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -19,8 +19,34 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 SC 02 - kanlee
   type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 03 - kanlee
+  type: vless
+  server: 162.159.24.131
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 04 - kanlee
+  type: vless
   server: 108.162.198.178
-  port: 8080
+  port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -30,7 +56,7 @@ proxies:
     path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 03 - kanlee
+- name: 🇸🇨 SC 05 - kanlee
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -40,7 +66,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇨 SC 04 - kanlee
+- name: 🇸🇨 SC 06 - kanlee
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 07 - kanlee
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -59,6 +98,9 @@ proxy-groups:
   - 🇸🇨 SC 02 - kanlee
   - 🇸🇨 SC 03 - kanlee
   - 🇸🇨 SC 04 - kanlee
+  - 🇸🇨 SC 05 - kanlee
+  - 🇸🇨 SC 06 - kanlee
+  - 🇸🇨 SC 07 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +110,8 @@ proxy-groups:
   - 🇸🇨 SC 02 - kanlee
   - 🇸🇨 SC 03 - kanlee
   - 🇸🇨 SC 04 - kanlee
+  - 🇸🇨 SC 05 - kanlee
+  - 🇸🇨 SC 06 - kanlee
+  - 🇸🇨 SC 07 - kanlee
 rules:
 - MATCH,PROXIES
