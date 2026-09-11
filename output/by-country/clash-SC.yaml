@@ -5,6 +5,66 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - kanlee
+  type: vless
+  server: 104.21.12.116
+  port: 8880
+  uuid: ed189537-41de-4abe-9f8b-bb75d457722d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lucky-cake-4f58.318-5ee.workers.dev
+- name: 🇸🇨 SC 02 - kanlee
+  type: vless
+  server: 45.130.125.96
+  port: 443
+  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dfsuporte.garena.com.ex33r.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-pusat
+    headers:
+      Host: dfsuporte.garena.com.ex33r.eu.cc
+- name: 🇸🇨 SC 03 - kanlee
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇨 SC 04 - kanlee
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 05 - kanlee
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇨 SC 06 - kanlee
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -20,11 +80,21 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - kanlee
+  - 🇸🇨 SC 02 - kanlee
+  - 🇸🇨 SC 03 - kanlee
+  - 🇸🇨 SC 04 - kanlee
+  - 🇸🇨 SC 05 - kanlee
+  - 🇸🇨 SC 06 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - kanlee
+  - 🇸🇨 SC 02 - kanlee
+  - 🇸🇨 SC 03 - kanlee
+  - 🇸🇨 SC 04 - kanlee
+  - 🇸🇨 SC 05 - kanlee
+  - 🇸🇨 SC 06 - kanlee
 rules:
 - MATCH,PROXIES

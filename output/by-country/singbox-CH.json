@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 LV 01 - kanlee",
-        "🇱🇻 LV 02 - kanlee",
-        "🇱🇻 LV 03 - kanlee",
-        "🇱🇻 LV 04 - kanlee"
+        "🇨🇭 CH 01 - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV 01 - kanlee",
-        "🇱🇻 LV 02 - kanlee",
-        "🇱🇻 LV 03 - kanlee",
-        "🇱🇻 LV 04 - kanlee"
+        "🇨🇭 CH 01 - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },

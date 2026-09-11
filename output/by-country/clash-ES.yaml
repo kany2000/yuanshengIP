@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - kanlee
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  type: vless
+  server: 8.34.70.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime09.workers.dev
 - name: 🇪🇸 西班牙 (Spain) 02 - kanlee
   type: ss
   server: 140.174.184.5
@@ -19,6 +25,13 @@ proxies:
   password: qItG8SueYQcP
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 03 - kanlee
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 04 - kanlee
   type: vless
   server: 212.227.235.66
   port: 2053
@@ -29,7 +42,7 @@ proxies:
   reality-opts:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +51,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - kanlee
   - 🇪🇸 西班牙 (Spain) 02 - kanlee
   - 🇪🇸 西班牙 (Spain) 03 - kanlee
+  - 🇪🇸 西班牙 (Spain) 04 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +60,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - kanlee
   - 🇪🇸 西班牙 (Spain) 02 - kanlee
   - 🇪🇸 西班牙 (Spain) 03 - kanlee
+  - 🇪🇸 西班牙 (Spain) 04 - kanlee
 rules:
 - MATCH,PROXIES
