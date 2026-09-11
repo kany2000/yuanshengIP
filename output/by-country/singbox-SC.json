@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - kanlee"
+        "🇸🇨 SC 01 - kanlee",
+        "🇸🇨 SC 02 - kanlee",
+        "🇸🇨 SC 03 - kanlee",
+        "🇸🇨 SC 04 - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - kanlee"
+        "🇸🇨 SC 01 - kanlee",
+        "🇸🇨 SC 02 - kanlee",
+        "🇸🇨 SC 03 - kanlee",
+        "🇸🇨 SC 04 - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },
