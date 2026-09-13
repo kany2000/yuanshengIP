@@ -6,77 +6,48 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - kanlee
   type: vless
-  server: 172.67.202.235
+  server: 103.119.18.30
   port: 443
-  uuid: 566c0473-382e-aabb-c62a-f5bb00000000
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ez-4b5fd4.appelidmymat.workers.dev
+  servername: mianfei-73q.pages.dev
   network: ws
   ws-opts:
-    path: /sync
+    path: /proxyip=154.3.33.43
     headers:
-      Host: ez-4b5fd4.appelidmymat.workers.dev
+      Host: mianfei-73q.pages.dev
 - name: 🇨🇿 CZ 02 - kanlee
   type: vless
-  server: 104.19.87.194
-  port: 443
-  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
+  server: 108.162.198.178
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ld.223350.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ld.223350.xyz
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇨🇿 CZ 03 - kanlee
   type: vless
-  server: 104.18.32.47
-  port: 8443
-  uuid: 4ff70740-8c80-48ae-985f-2afe4924e908
+  server: 103.119.18.30
+  port: 443
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pubb.clnahanpnln.workers.dev
+  servername: mianfei-73q.pages.dev
   network: ws
   ws-opts:
-    path: /sync
+    path: /proxyip=154.3.33.43
     headers:
-      Host: pubb.clnahanpnln.workers.dev
+      Host: mianfei-73q.pages.dev
 - name: 🇨🇿 CZ 04 - kanlee
   type: vless
-  server: 8.6.112.9
-  port: 443
-  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ancient-heart-60c5.dpccgizieb.workers.dev
-- name: 🇨🇿 CZ 05 - kanlee
-  type: vless
-  server: 188.114.98.134
-  port: 443
-  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
-- name: 🇨🇿 CZ 06 - kanlee
-  type: vless
-  server: 162.159.43.187
+  server: 104.18.46.234
   port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -84,34 +55,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 07 - kanlee
-  type: vless
-  server: 172.67.151.77
-  port: 443
-  uuid: 73796e63-0000-4000-8000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nahan-core.fatitelegram.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.fatitelegram.workers.dev
-- name: 🇨🇿 CZ 08 - kanlee
-  type: vless
-  server: 162.159.48.32
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
@@ -123,10 +67,6 @@ proxy-groups:
   - 🇨🇿 CZ 02 - kanlee
   - 🇨🇿 CZ 03 - kanlee
   - 🇨🇿 CZ 04 - kanlee
-  - 🇨🇿 CZ 05 - kanlee
-  - 🇨🇿 CZ 06 - kanlee
-  - 🇨🇿 CZ 07 - kanlee
-  - 🇨🇿 CZ 08 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -136,9 +76,5 @@ proxy-groups:
   - 🇨🇿 CZ 02 - kanlee
   - 🇨🇿 CZ 03 - kanlee
   - 🇨🇿 CZ 04 - kanlee
-  - 🇨🇿 CZ 05 - kanlee
-  - 🇨🇿 CZ 06 - kanlee
-  - 🇨🇿 CZ 07 - kanlee
-  - 🇨🇿 CZ 08 - kanlee
 rules:
 - MATCH,PROXIES
