@@ -15,34 +15,6 @@ proxies:
   servername: connect3.nyxserver.ir
 - name: 🇹🇷 土耳其 (Turkey) 02 - kanlee
   type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 464bc502-f963-45b6-81e3-e33d18427506
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shop.neexbyte.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shop.neexbyte.ir
-- name: 🇹🇷 土耳其 (Turkey) 03 - kanlee
-  type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 464bc502-f963-45b6-81e3-e33d18427506
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shop.neexbyte.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shop.neexbyte.ir
-- name: 🇹🇷 土耳其 (Turkey) 04 - kanlee
-  type: vless
   server: connect3.nyxserver.ir
   port: 8444
   uuid: 0b39a009-2a2a-4035-ba87-cc82894f8e21
@@ -50,6 +22,13 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: connect3.nyxserver.ir
+- name: 🇹🇷 土耳其 (Turkey) 03 - kanlee
+  type: ss
+  server: 188.132.174.236
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,7 +37,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - kanlee
   - 🇹🇷 土耳其 (Turkey) 02 - kanlee
   - 🇹🇷 土耳其 (Turkey) 03 - kanlee
-  - 🇹🇷 土耳其 (Turkey) 04 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,6 +45,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - kanlee
   - 🇹🇷 土耳其 (Turkey) 02 - kanlee
   - 🇹🇷 土耳其 (Turkey) 03 - kanlee
-  - 🇹🇷 土耳其 (Turkey) 04 - kanlee
 rules:
 - MATCH,PROXIES
