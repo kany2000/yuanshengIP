@@ -6,28 +6,72 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - kanlee
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: ab3a17ae-4d4f-45ff-a05f-4d27b7f97838
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - kanlee
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: fa34a94b-f304-4290-bd94-a83cc2ce21be
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - kanlee
+  type: vless
+  server: 146.190.124.36
+  port: 74
+  uuid: d4d0d523-0c2a-4b9d-b630-0637f0b77904
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: edge
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 04 - kanlee
+  type: vless
+  server: 128.241.25.3
+  port: 30021
+  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - kanlee
+  type: vless
+  server: 211.48.30.184
+  port: 30017
+  uuid: beec57a5-8266-4279-b279-f495bdc70699
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +79,9 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - kanlee
   - 🇦🇪 阿联酋 (UAE) 02 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 03 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 04 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 05 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +89,8 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - kanlee
   - 🇦🇪 阿联酋 (UAE) 02 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 03 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 04 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 05 - kanlee
 rules:
 - MATCH,PROXIES
