@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇪 BE 01 - kanlee",
+        "🇧🇪 BE 02 - kanlee",
+        "🇧🇪 BE 03 - kanlee",
+        "🇧🇪 BE 04 - kanlee",
+        "🇧🇪 BE 05 - kanlee",
+        "🇧🇪 BE 06 - kanlee",
+        "🇧🇪 BE 07 - kanlee",
+        "🇧🇪 BE 08 - kanlee"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇪 BE 01 - kanlee",
+        "🇧🇪 BE 02 - kanlee",
+        "🇧🇪 BE 03 - kanlee",
+        "🇧🇪 BE 04 - kanlee",
+        "🇧🇪 BE 05 - kanlee",
+        "🇧🇪 BE 06 - kanlee",
+        "🇧🇪 BE 07 - kanlee",
+        "🇧🇪 BE 08 - kanlee"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

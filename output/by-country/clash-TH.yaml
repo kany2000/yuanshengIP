@@ -6,16 +6,17 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - kanlee
   type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  server: 172.66.140.62
+  port: 8880
+  uuid: 160ca353-676d-4b7f-a041-0289e388b865
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proud-cloud-7bdd.208-a52.workers.dev
 - name: 🇹🇭 TH 02 - kanlee
   type: vless
   server: 34.15.162.1
@@ -27,8 +28,95 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇹🇭 TH 03 - kanlee
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇹🇭 TH 04 - kanlee
+  type: vless
+  server: 103.137.22.71
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /register?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇹🇭 TH 05 - kanlee
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇭 TH 06 - kanlee
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇹🇭 TH 07 - kanlee
+  type: vless
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 TH 08 - kanlee
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇹🇭 TH 09 - kanlee
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇹🇭 TH 10 - kanlee
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -51,6 +139,13 @@ proxy-groups:
   - 🇹🇭 TH 01 - kanlee
   - 🇹🇭 TH 02 - kanlee
   - 🇹🇭 TH 03 - kanlee
+  - 🇹🇭 TH 04 - kanlee
+  - 🇹🇭 TH 05 - kanlee
+  - 🇹🇭 TH 06 - kanlee
+  - 🇹🇭 TH 07 - kanlee
+  - 🇹🇭 TH 08 - kanlee
+  - 🇹🇭 TH 09 - kanlee
+  - 🇹🇭 TH 10 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +154,12 @@ proxy-groups:
   - 🇹🇭 TH 01 - kanlee
   - 🇹🇭 TH 02 - kanlee
   - 🇹🇭 TH 03 - kanlee
+  - 🇹🇭 TH 04 - kanlee
+  - 🇹🇭 TH 05 - kanlee
+  - 🇹🇭 TH 06 - kanlee
+  - 🇹🇭 TH 07 - kanlee
+  - 🇹🇭 TH 08 - kanlee
+  - 🇹🇭 TH 09 - kanlee
+  - 🇹🇭 TH 10 - kanlee
 rules:
 - MATCH,PROXIES
