@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - kanlee"
+        "🇦🇪 阿联酋 (UAE) 01 - kanlee",
+        "🇦🇪 阿联酋 (UAE) 02 - kanlee",
+        "🇦🇪 阿联酋 (UAE) 03 - kanlee",
+        "🇦🇪 阿联酋 (UAE) 04 - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - kanlee"
+        "🇦🇪 阿联酋 (UAE) 01 - kanlee",
+        "🇦🇪 阿联酋 (UAE) 02 - kanlee",
+        "🇦🇪 阿联酋 (UAE) 03 - kanlee",
+        "🇦🇪 阿联酋 (UAE) 04 - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },
