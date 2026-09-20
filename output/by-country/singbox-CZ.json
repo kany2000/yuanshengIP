@@ -6,24 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - kanlee",
-        "🇨🇿 CZ 02 - kanlee",
-        "🇨🇿 CZ 03 - kanlee",
-        "🇨🇿 CZ 04 - kanlee",
-        "🇨🇿 CZ 05 - kanlee",
-        "🇨🇿 CZ 06 - kanlee"
+        "🇨🇿 CZ 01 - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - kanlee",
-        "🇨🇿 CZ 02 - kanlee",
-        "🇨🇿 CZ 03 - kanlee",
-        "🇨🇿 CZ 04 - kanlee",
-        "🇨🇿 CZ 05 - kanlee",
-        "🇨🇿 CZ 06 - kanlee"
+        "🇨🇿 CZ 01 - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },
