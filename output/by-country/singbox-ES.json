@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - kanlee",
-        "🇪🇸 西班牙 (Spain) 02 - kanlee",
-        "🇪🇸 西班牙 (Spain) 03 - kanlee"
+        "🇪🇸 西班牙 (Spain) 01 - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - kanlee",
-        "🇪🇸 西班牙 (Spain) 02 - kanlee",
-        "🇪🇸 西班牙 (Spain) 03 - kanlee"
+        "🇪🇸 西班牙 (Spain) 01 - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },
