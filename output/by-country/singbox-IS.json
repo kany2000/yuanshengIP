@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD 01 - kanlee"
+        "🇮🇸 IS 01 - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD 01 - kanlee"
+        "🇮🇸 IS 01 - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },

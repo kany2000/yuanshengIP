@@ -6,39 +6,29 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - kanlee
   type: vless
-  server: 172.67.145.21
-  port: 443
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  server: 103.200.28.113
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: index.arcane509.workers.dev
-- name: 🇨🇿 CZ 02 - kanlee
-  type: vless
-  server: 93.119.195.222
-  port: 48904
-  uuid: 87d65614-5658-4f26-8157-0591489d230a
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - kanlee
-  - 🇨🇿 CZ 02 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - kanlee
-  - 🇨🇿 CZ 02 - kanlee
 rules:
 - MATCH,PROXIES
