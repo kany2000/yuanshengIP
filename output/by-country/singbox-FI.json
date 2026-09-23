@@ -6,26 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - kanlee",
-        "🇫🇮 FI 02 - kanlee",
-        "🇫🇮 FI 03 - kanlee",
-        "🇫🇮 FI 04 - kanlee",
-        "🇫🇮 FI 05 - kanlee",
-        "🇫🇮 FI 06 - kanlee",
-        "🇫🇮 FI 07 - kanlee"
+        "🇫🇮 FI 01 - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - kanlee",
-        "🇫🇮 FI 02 - kanlee",
-        "🇫🇮 FI 03 - kanlee",
-        "🇫🇮 FI 04 - kanlee",
-        "🇫🇮 FI 05 - kanlee",
-        "🇫🇮 FI 06 - kanlee",
-        "🇫🇮 FI 07 - kanlee"
+        "🇫🇮 FI 01 - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },
