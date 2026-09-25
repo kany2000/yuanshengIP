@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - kanlee
+- name: 🇧🇷 BR 01 - kanlee
   type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  server: 154.197.75.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /
     headers:
-      Host: cf3.rumedia-cdn.com
+      Host: vms.lifetime37.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - kanlee
+  - 🇧🇷 BR 01 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - kanlee
+  - 🇧🇷 BR 01 - kanlee
 rules:
 - MATCH,PROXIES
