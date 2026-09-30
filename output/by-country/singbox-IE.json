@@ -6,14 +6,32 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - kanlee"
+        "🇮🇪 IE 01 - kanlee",
+        "🇮🇪 IE 02 - kanlee",
+        "🇮🇪 IE 03 - kanlee",
+        "🇮🇪 IE 04 - kanlee",
+        "🇮🇪 IE 05 - kanlee",
+        "🇮🇪 IE 06 - kanlee",
+        "🇮🇪 IE 07 - kanlee",
+        "🇮🇪 IE 08 - kanlee",
+        "🇮🇪 IE 09 - kanlee",
+        "🇮🇪 IE 10 - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - kanlee"
+        "🇮🇪 IE 01 - kanlee",
+        "🇮🇪 IE 02 - kanlee",
+        "🇮🇪 IE 03 - kanlee",
+        "🇮🇪 IE 04 - kanlee",
+        "🇮🇪 IE 05 - kanlee",
+        "🇮🇪 IE 06 - kanlee",
+        "🇮🇪 IE 07 - kanlee",
+        "🇮🇪 IE 08 - kanlee",
+        "🇮🇪 IE 09 - kanlee",
+        "🇮🇪 IE 10 - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },
