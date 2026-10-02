@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - kanlee
   type: vless
-  server: 172.66.44.211
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wk1.f1w.de5.net
-- name: 🇺🇸 美国 (United States) 02 (家宽) - kanlee
-  type: vless
   server: 154.17.228.81
   port: 59686
   uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - kanlee
-  - 🇺🇸 美国 (United States) 02 (家宽) - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - kanlee
-  - 🇺🇸 美国 (United States) 02 (家宽) - kanlee
 rules:
 - MATCH,PROXIES
