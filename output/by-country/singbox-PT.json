@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇹 PT 01 - kanlee",
-        "🇵🇹 PT 02 - kanlee"
+        "🇵🇹 PT 01 - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇹 PT 01 - kanlee",
-        "🇵🇹 PT 02 - kanlee"
+        "🇵🇹 PT 01 - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },
