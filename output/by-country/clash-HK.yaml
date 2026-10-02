@@ -14,13 +14,48 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: aksai.org
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: ''
+      Host: aksai.org
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - kanlee
+  type: ss
+  server: telegramx.khp25.com
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: m5nsedvdczx6x06e
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - kanlee
+  type: vless
+  server: hk.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: hk.monkora.org
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - kanlee
+  type: vless
+  server: 195.58.144.56
+  port: 11907
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195.58.144.56
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - kanlee
+  type: ss
+  server: telegram.khp25.com
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - kanlee
   type: vmess
   server: 194.99.79.26
   port: 443
@@ -30,22 +65,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: ''
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: aksai.org
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - kanlee
-  type: vless
-  server: 195.58.144.56
-  port: 11907
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195.58.144.56
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - kanlee
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - kanlee
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -60,29 +86,22 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - kanlee
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - kanlee
   type: vmess
-  server: 194.99.79.26
+  server: 47.243.153.153
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: I2PSm3Knof5qjjix.v.3dns.vip
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /ws-vmess
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - kanlee
-  type: ss
-  server: telegram.khp25.com
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: pno0e2keji2gsfea
-  udp: true
+      Host: I2PSm3Knof5qjjix.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,6 +113,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - kanlee
   - 🇭🇰 中国香港 (Hong Kong) 05 - kanlee
   - 🇭🇰 中国香港 (Hong Kong) 06 - kanlee
+  - 🇭🇰 中国香港 (Hong Kong) 07 - kanlee
+  - 🇭🇰 中国香港 (Hong Kong) 08 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,5 +126,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - kanlee
   - 🇭🇰 中国香港 (Hong Kong) 05 - kanlee
   - 🇭🇰 中国香港 (Hong Kong) 06 - kanlee
+  - 🇭🇰 中国香港 (Hong Kong) 07 - kanlee
+  - 🇭🇰 中国香港 (Hong Kong) 08 - kanlee
 rules:
 - MATCH,PROXIES
