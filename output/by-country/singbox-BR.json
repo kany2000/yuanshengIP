@@ -6,20 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - kanlee",
-        "🇱🇰 LK 02 - kanlee",
-        "🇱🇰 LK 03 - kanlee",
-        "🇱🇰 LK 04 - kanlee"
+        "🇧🇷 BR 01 - kanlee",
+        "🇧🇷 BR 02 - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - kanlee",
-        "🇱🇰 LK 02 - kanlee",
-        "🇱🇰 LK 03 - kanlee",
-        "🇱🇰 LK 04 - kanlee"
+        "🇧🇷 BR 01 - kanlee",
+        "🇧🇷 BR 02 - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },
