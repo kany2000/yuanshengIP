@@ -6,32 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇱 CL 01 - kanlee
   type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇨🇱 CL 02 - kanlee
-  type: vless
-  server: platform109.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: platform109.halalkhor.info
-- name: 🇨🇱 CL 03 - kanlee
-  type: vless
   server: platform107.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -43,7 +17,7 @@ proxies:
     path: /platform107
     headers:
       Host: platform107.golnamakcert.top
-- name: 🇨🇱 CL 04 - kanlee
+- name: 🇨🇱 CL 02 - kanlee
   type: vless
   server: platform107.golnamakcert.top
   port: 80
@@ -56,9 +30,9 @@ proxies:
     path: /platform107
     headers:
       Host: platform107.halalkhor.info
-- name: 🇨🇱 CL 05 - kanlee
+- name: 🇨🇱 CL 03 - kanlee
   type: vless
-  server: platform101.golnamakcert.top
+  server: platform118.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -66,10 +40,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform101
+    path: /platform118
     headers:
-      Host: platform101.halalkhor.info
-- name: 🇨🇱 CL 06 - kanlee
+      Host: platform118.halalkhor.info
+- name: 🇨🇱 CL 04 - kanlee
   type: vless
   server: platform115.golnamakcert.top
   port: 80
@@ -82,9 +56,9 @@ proxies:
     path: /platform115
     headers:
       Host: platform115.halalkhor.info
-- name: 🇨🇱 CL 07 - kanlee
+- name: 🇨🇱 CL 05 - kanlee
   type: vless
-  server: platform103.golnamakcert.top
+  server: platform109.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -92,23 +66,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform103
+    path: /platform109
     headers:
-      Host: platform103.halalkhor.info
-- name: 🇨🇱 CL 08 - kanlee
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇨🇱 CL 09 - kanlee
+      Host: platform109.halalkhor.info
+- name: 🇨🇱 CL 06 - kanlee
   type: vless
   server: platform106.golnamakcert.top
   port: 80
@@ -121,7 +82,33 @@ proxies:
     path: /platform106
     headers:
       Host: platform106.halalkhor.info
-- name: 🇨🇱 CL 10 - kanlee
+- name: 🇨🇱 CL 07 - kanlee
+  type: vless
+  server: 64.176.16.32
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform113
+    headers:
+      Host: platform113.halalkhor.info
+- name: 🇨🇱 CL 08 - kanlee
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇨🇱 CL 09 - kanlee
   type: vless
   server: platform117.golnamakcert.top
   port: 80
@@ -134,6 +121,32 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
+- name: 🇨🇱 CL 10 - kanlee
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇨🇱 CL 11 - kanlee
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -149,6 +162,7 @@ proxy-groups:
   - 🇨🇱 CL 08 - kanlee
   - 🇨🇱 CL 09 - kanlee
   - 🇨🇱 CL 10 - kanlee
+  - 🇨🇱 CL 11 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -164,5 +178,6 @@ proxy-groups:
   - 🇨🇱 CL 08 - kanlee
   - 🇨🇱 CL 09 - kanlee
   - 🇨🇱 CL 10 - kanlee
+  - 🇨🇱 CL 11 - kanlee
 rules:
 - MATCH,PROXIES
