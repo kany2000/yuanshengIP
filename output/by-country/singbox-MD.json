@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇩 MD 01 - kanlee",
+        "🇲🇩 MD 02 - kanlee",
+        "🇲🇩 MD 03 - kanlee",
+        "🇲🇩 MD 04 - kanlee",
+        "🇲🇩 MD 05 - kanlee",
+        "🇲🇩 MD 06 - kanlee",
+        "🇲🇩 MD 07 - kanlee",
+        "🇲🇩 MD 08 - kanlee",
+        "🇲🇩 MD 09 - kanlee",
+        "🇲🇩 MD 10 - kanlee",
+        "🇲🇩 MD 11 - kanlee",
+        "🇲🇩 MD 12 - kanlee",
+        "🇲🇩 MD 13 - kanlee",
+        "🇲🇩 MD 14 - kanlee",
+        "🇲🇩 MD 15 - kanlee",
+        "🇲🇩 MD 16 - kanlee",
+        "🇲🇩 MD 17 - kanlee"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇩 MD 01 - kanlee",
+        "🇲🇩 MD 02 - kanlee",
+        "🇲🇩 MD 03 - kanlee",
+        "🇲🇩 MD 04 - kanlee",
+        "🇲🇩 MD 05 - kanlee",
+        "🇲🇩 MD 06 - kanlee",
+        "🇲🇩 MD 07 - kanlee",
+        "🇲🇩 MD 08 - kanlee",
+        "🇲🇩 MD 09 - kanlee",
+        "🇲🇩 MD 10 - kanlee",
+        "🇲🇩 MD 11 - kanlee",
+        "🇲🇩 MD 12 - kanlee",
+        "🇲🇩 MD 13 - kanlee",
+        "🇲🇩 MD 14 - kanlee",
+        "🇲🇩 MD 15 - kanlee",
+        "🇲🇩 MD 16 - kanlee",
+        "🇲🇩 MD 17 - kanlee"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
