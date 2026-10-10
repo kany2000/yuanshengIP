@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - kanlee
   type: ss
-  server: 149.22.87.204
+  server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
@@ -19,20 +19,56 @@ proxies:
   password: 3eOFeNssde7PYYMv
   udp: true
 - name: 🇯🇵 日本 (Japan) 03 - kanlee
+  type: ss
+  server: ruot.ayucloudservices.nl
+  port: 22073
+  cipher: aes-256-gcm
+  password: bd962c9a-d6f2-4561-bd80-34206c4d5279
+  udp: true
+- name: 🇯🇵 日本 (Japan) 04 - kanlee
   type: vless
-  server: 104.16.10.185
+  server: 137.220.221.179
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 05 - kanlee
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 06 - kanlee
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---TOOTFFARANGI
     headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 04 - kanlee
+      Host: lucasjow.us.ci
+- name: 🇯🇵 日本 (Japan) 07 - kanlee
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 08 - kanlee
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 09 - kanlee
   type: vless
   server: 162.159.254.3
   port: 443
@@ -46,78 +82,21 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 05 - kanlee
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 06 - kanlee
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 07 - kanlee
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 08 - kanlee
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 09 - kanlee
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 - name: 🇯🇵 日本 (Japan) 10 - kanlee
-  type: ss
-  server: ruot.ayucloudservices.nl
-  port: 22073
-  cipher: aes-256-gcm
-  password: bd962c9a-d6f2-4561-bd80-34206c4d5279
-  udp: true
-- name: 🇯🇵 日本 (Japan) 11 - kanlee
   type: vless
-  server: 104.16.10.22
+  server: 172.64.144.82
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 12 - kanlee
+      Host: lucasjow.us.ci
+- name: 🇯🇵 日本 (Japan) 11 - kanlee
   type: vless
   server: 188.114.97.6
   port: 443
@@ -128,24 +107,17 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---DailyConfigs
     headers:
       Host: lucasjow.us.ci
-- name: 🇯🇵 日本 (Japan) 13 - kanlee
+- name: 🇯🇵 日本 (Japan) 12 - kanlee
   type: ss
   server: 84.247.155.196
   port: 443
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 14 - kanlee
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 15 - kanlee
+- name: 🇯🇵 日本 (Japan) 13 - kanlee
   type: vless
   server: 188.114.97.6
   port: 443
@@ -159,9 +131,30 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---TOOTFARANGI
     headers:
       Host: lucasjow.us.ci
+- name: 🇯🇵 日本 (Japan) 14 - kanlee
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 15 - kanlee
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 16 - kanlee
   type: vless
-  server: 143.20.156.116
+  server: 104.19.164.155
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -183,6 +176,37 @@ proxies:
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 18 - kanlee
   type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 19 - kanlee
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 20 - kanlee
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 21 - kanlee
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 22 - kanlee
+  type: vless
   server: 104.16.111.202
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
@@ -195,9 +219,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 19 - kanlee
+- name: 🇯🇵 日本 (Japan) 23 - kanlee
   type: vless
-  server: 104.16.10.104
+  server: 143.20.156.116
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -209,7 +233,21 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 20 - kanlee
+- name: 🇯🇵 日本 (Japan) 24 - kanlee
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 25 - kanlee
   type: vless
   server: 137.220.221.179
   port: 443
@@ -242,6 +280,11 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 18 - kanlee
   - 🇯🇵 日本 (Japan) 19 - kanlee
   - 🇯🇵 日本 (Japan) 20 - kanlee
+  - 🇯🇵 日本 (Japan) 21 - kanlee
+  - 🇯🇵 日本 (Japan) 22 - kanlee
+  - 🇯🇵 日本 (Japan) 23 - kanlee
+  - 🇯🇵 日本 (Japan) 24 - kanlee
+  - 🇯🇵 日本 (Japan) 25 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -267,5 +310,10 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 18 - kanlee
   - 🇯🇵 日本 (Japan) 19 - kanlee
   - 🇯🇵 日本 (Japan) 20 - kanlee
+  - 🇯🇵 日本 (Japan) 21 - kanlee
+  - 🇯🇵 日本 (Japan) 22 - kanlee
+  - 🇯🇵 日本 (Japan) 23 - kanlee
+  - 🇯🇵 日本 (Japan) 24 - kanlee
+  - 🇯🇵 日本 (Japan) 25 - kanlee
 rules:
 - MATCH,PROXIES
