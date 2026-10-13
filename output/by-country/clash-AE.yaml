@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - kanlee
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -18,6 +18,19 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - kanlee
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - kanlee
   type: vless
   server: 31.57.190.49
   port: 443
@@ -31,19 +44,6 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
     headers:
       Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 03 - kanlee
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - kanlee
   type: vless
   server: uae.unixzone.us
@@ -58,6 +58,71 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - kanlee
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - kanlee
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - kanlee
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - kanlee
+  type: vless
+  server: 172.64.88.168
+  port: 8880
+  uuid: 6f876b28-1b3e-4088-85c0-d299e56bfccd
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: throbbing-haze-fbde.388-6c4.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 09 - kanlee
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - kanlee
   type: vless
   server: 31.57.190.17
   port: 443
@@ -81,6 +146,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - kanlee
   - 🇦🇪 阿联酋 (UAE) 04 - kanlee
   - 🇦🇪 阿联酋 (UAE) 05 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 06 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 07 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 08 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 09 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 10 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,5 +161,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - kanlee
   - 🇦🇪 阿联酋 (UAE) 04 - kanlee
   - 🇦🇪 阿联酋 (UAE) 05 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 06 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 07 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 08 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 09 - kanlee
+  - 🇦🇪 阿联酋 (UAE) 10 - kanlee
 rules:
 - MATCH,PROXIES
