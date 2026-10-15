@@ -34,6 +34,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇦🇹 AT 05 - kanlee
+  type: vless
+  server: 138.124.90.177
+  port: 10443
+  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +51,7 @@ proxy-groups:
   - 🇦🇹 AT 02 - kanlee
   - 🇦🇹 AT 03 - kanlee
   - 🇦🇹 AT 04 - kanlee
+  - 🇦🇹 AT 05 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,5 +61,6 @@ proxy-groups:
   - 🇦🇹 AT 02 - kanlee
   - 🇦🇹 AT 03 - kanlee
   - 🇦🇹 AT 04 - kanlee
+  - 🇦🇹 AT 05 - kanlee
 rules:
 - MATCH,PROXIES
