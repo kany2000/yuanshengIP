@@ -16,21 +16,20 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: ais.speedtest.net
+      Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 TH 02 - kanlee
   type: vless
-  server: 104.16.10.2
-  port: 443
+  server: v2ray.simspeedup.com
+  port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
+      Host: ais.speedtest.net
 - name: 🇹🇭 TH 03 - kanlee
   type: vless
   server: 104.16.10.185
@@ -46,12 +45,18 @@ proxies:
     headers:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 04 - kanlee
-  type: ss
-  server: pphfree2.mvpnpvpn.de5.net
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  type: vless
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
 - name: 🇹🇭 TH 05 - kanlee
   type: ss
   server: pphfree2.mvpnpvpn.de5.net
@@ -59,65 +64,6 @@ proxies:
   cipher: aes-256-gcm
   password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
   udp: true
-- name: 🇹🇭 TH 06 - kanlee
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 07 - kanlee
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 08 - kanlee
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 09 - kanlee
-  type: ss
-  server: 103.107.52.106
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
-  udp: true
-- name: 🇹🇭 TH 10 - kanlee
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -128,11 +74,6 @@ proxy-groups:
   - 🇹🇭 TH 03 - kanlee
   - 🇹🇭 TH 04 - kanlee
   - 🇹🇭 TH 05 - kanlee
-  - 🇹🇭 TH 06 - kanlee
-  - 🇹🇭 TH 07 - kanlee
-  - 🇹🇭 TH 08 - kanlee
-  - 🇹🇭 TH 09 - kanlee
-  - 🇹🇭 TH 10 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -143,10 +84,5 @@ proxy-groups:
   - 🇹🇭 TH 03 - kanlee
   - 🇹🇭 TH 04 - kanlee
   - 🇹🇭 TH 05 - kanlee
-  - 🇹🇭 TH 06 - kanlee
-  - 🇹🇭 TH 07 - kanlee
-  - 🇹🇭 TH 08 - kanlee
-  - 🇹🇭 TH 09 - kanlee
-  - 🇹🇭 TH 10 - kanlee
 rules:
 - MATCH,PROXIES
