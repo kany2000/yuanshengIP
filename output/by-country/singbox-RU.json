@@ -6,18 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - kanlee",
-        "🇨🇳 CN 02 - kanlee",
-        "🇨🇳 CN 03 - kanlee"
+        "🇷🇺 俄罗斯 (Russia) 01 - kanlee",
+        "🇷🇺 俄罗斯 (Russia) 02 - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - kanlee",
-        "🇨🇳 CN 02 - kanlee",
-        "🇨🇳 CN 03 - kanlee"
+        "🇷🇺 俄罗斯 (Russia) 01 - kanlee",
+        "🇷🇺 俄罗斯 (Russia) 02 - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },
