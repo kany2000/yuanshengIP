@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - kanlee
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇷🇴 RO 02 - kanlee
   type: vless
   server: edge10.cyrionflare.com
@@ -20,14 +21,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 03 - kanlee
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 04 - kanlee
   type: ss
   server: 194.68.44.42
   port: 64546
@@ -42,7 +35,6 @@ proxy-groups:
   - 🇷🇴 RO 01 - kanlee
   - 🇷🇴 RO 02 - kanlee
   - 🇷🇴 RO 03 - kanlee
-  - 🇷🇴 RO 04 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,6 +43,5 @@ proxy-groups:
   - 🇷🇴 RO 01 - kanlee
   - 🇷🇴 RO 02 - kanlee
   - 🇷🇴 RO 03 - kanlee
-  - 🇷🇴 RO 04 - kanlee
 rules:
 - MATCH,PROXIES
