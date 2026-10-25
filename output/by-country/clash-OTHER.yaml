@@ -6,21 +6,7 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - kanlee
   type: vless
-  server: ccc.010304.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 02 - kanlee
-  type: vless
-  server: 104.17.50.227
+  server: 104.21.34.106
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -32,20 +18,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 03 - kanlee
-  type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 04 - kanlee
+- name: 🌐 其他地区 (Other) 02 - kanlee
   type: vless
   server: 104.18.0.181
   port: 2082
@@ -58,9 +31,37 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 03 - kanlee
+  type: vless
+  server: 172.64.190.13
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 04 - kanlee
+  type: vless
+  server: 172.64.146.66
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 05 - kanlee
   type: vless
-  server: 104.21.34.106
+  server: 188.114.98.0
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -74,18 +75,17 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 06 - kanlee
   type: vless
-  server: 104.21.221.158
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 104.18.35.86
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=unsafe
+    path: /sg-melbi
     headers:
-      Host: ccc.010304.xyz
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🌐 其他地区 (Other) 07 - kanlee
   type: vless
   server: 104.21.221.158
@@ -102,20 +102,21 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 08 - kanlee
   type: vless
-  server: 104.18.35.86
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 172.64.146.66
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /fp
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 09 - kanlee
   type: vless
-  server: cf.090227.xyz
+  server: 104.18.41.190
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -124,80 +125,24 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 10 - kanlee
   type: vless
-  server: 104.19.164.155
+  server: 8.47.69.60
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /
     headers:
-      Host: jp3.yohototo.top
+      Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 11 - kanlee
-  type: vless
-  server: 8.47.69.60
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 12 - kanlee
-  type: vless
-  server: 8.47.69.60
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 13 - kanlee
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 14 - kanlee
-  type: vless
-  server: 104.19.48.107
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 15 - kanlee
   type: vless
   server: 172.64.150.28
   port: 2082
@@ -210,7 +155,7 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 16 - kanlee
+- name: 🌐 其他地区 (Other) 12 - kanlee
   type: vless
   server: 104.21.221.158
   port: 443
@@ -224,23 +169,9 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 17 - kanlee
+- name: 🌐 其他地区 (Other) 13 - kanlee
   type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 18 - kanlee
-  type: vless
-  server: 104.17.189.78
+  server: 104.18.81.30
   port: 443
   uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
@@ -252,161 +183,7 @@ proxies:
     path: /ws
     headers:
       Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 19 - kanlee
-  type: vless
-  server: 172.64.146.66
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 20 - kanlee
-  type: vless
-  server: 104.18.153.10
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 21 - kanlee
-  type: vless
-  server: 104.21.34.106
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 22 - kanlee
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 23 - kanlee
-  type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 24 - kanlee
-  type: vless
-  server: 104.18.41.190
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 25 - kanlee
-  type: vless
-  server: 104.18.45.38
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 26 - kanlee
-  type: vless
-  server: 172.64.158.170
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 27 - kanlee
-  type: vless
-  server: 172.64.146.66
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 28 - kanlee
-  type: vless
-  server: 104.16.111.195
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 29 - kanlee
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 30 - kanlee
+- name: 🌐 其他地区 (Other) 14 - kanlee
   type: vless
   server: 172.64.152.241
   port: 443
@@ -420,22 +197,9 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 31 - kanlee
+- name: 🌐 其他地区 (Other) 15 - kanlee
   type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 32 - kanlee
-  type: vless
-  server: 104.21.219.160
+  server: 104.21.34.106
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -447,7 +211,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 33 - kanlee
+- name: 🌐 其他地区 (Other) 16 - kanlee
   type: vless
   server: 104.18.45.38
   port: 443
@@ -461,9 +225,9 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 34 - kanlee
+- name: 🌐 其他地区 (Other) 17 - kanlee
   type: vless
-  server: 104.26.4.2
+  server: cf.090227.xyz
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -472,12 +236,12 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 35 - kanlee
+- name: 🌐 其他地区 (Other) 18 - kanlee
   type: vless
-  server: 104.21.70.21
+  server: 188.114.97.6
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -489,7 +253,63 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 36 - kanlee
+- name: 🌐 其他地区 (Other) 19 - kanlee
+  type: vless
+  server: 104.16.111.195
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 20 - kanlee
+  type: vless
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 21 - kanlee
+  type: vless
+  server: ccc.010304.xyz
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 22 - kanlee
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 23 - kanlee
   type: vless
   server: 104.18.41.190
   port: 443
@@ -503,9 +323,93 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 37 - kanlee
+- name: 🌐 其他地区 (Other) 24 - kanlee
   type: vless
-  server: 104.19.33.25
+  server: 172.64.158.170
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 25 - kanlee
+  type: vless
+  server: 104.26.4.2
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 26 - kanlee
+  type: vless
+  server: 104.18.35.86
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 27 - kanlee
+  type: vless
+  server: 104.18.35.86
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 28 - kanlee
+  type: vless
+  server: 8.47.69.60
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 29 - kanlee
+  type: vmess
+  server: node8.liudonghoe.com
+  port: 443
+  uuid: 47050e4e-965d-41ca-976d-73c1f11e6905
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /hoe8
+    headers:
+      Host: ''
+- name: 🌐 其他地区 (Other) 30 - kanlee
+  type: vless
+  server: 172.67.156.147
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -517,6 +421,48 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 31 - kanlee
+  type: vless
+  server: 104.18.45.38
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 32 - kanlee
+  type: vless
+  server: 104.16.0.1
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 33 - kanlee
+  type: vless
+  server: 104.21.221.158
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -555,10 +501,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 31 - kanlee
   - 🌐 其他地区 (Other) 32 - kanlee
   - 🌐 其他地区 (Other) 33 - kanlee
-  - 🌐 其他地区 (Other) 34 - kanlee
-  - 🌐 其他地区 (Other) 35 - kanlee
-  - 🌐 其他地区 (Other) 36 - kanlee
-  - 🌐 其他地区 (Other) 37 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -597,9 +539,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 31 - kanlee
   - 🌐 其他地区 (Other) 32 - kanlee
   - 🌐 其他地区 (Other) 33 - kanlee
-  - 🌐 其他地区 (Other) 34 - kanlee
-  - 🌐 其他地区 (Other) 35 - kanlee
-  - 🌐 其他地区 (Other) 36 - kanlee
-  - 🌐 其他地区 (Other) 37 - kanlee
 rules:
 - MATCH,PROXIES
