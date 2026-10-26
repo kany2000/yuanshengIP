@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - kanlee
   type: vless
-  server: 149.104.90.21
+  server: mx001.zestapp778.com
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -15,7 +15,7 @@ proxies:
   servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 02 - kanlee
   type: vless
-  server: 149.104.90.21
+  server: mx001.zestapp778.com
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -33,6 +33,15 @@ proxies:
   servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 04 - kanlee
   type: vless
+  server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 05 - kanlee
+  type: vless
   server: mx001.zestapp778.com
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
@@ -40,6 +49,33 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 06 - kanlee
+  type: vless
+  server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 07 - kanlee
+  type: vless
+  server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 08 - kanlee
+  type: vless
+  server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 149.104.90.21
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +85,10 @@ proxy-groups:
   - 🇲🇽 MX 02 - kanlee
   - 🇲🇽 MX 03 - kanlee
   - 🇲🇽 MX 04 - kanlee
+  - 🇲🇽 MX 05 - kanlee
+  - 🇲🇽 MX 06 - kanlee
+  - 🇲🇽 MX 07 - kanlee
+  - 🇲🇽 MX 08 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +98,9 @@ proxy-groups:
   - 🇲🇽 MX 02 - kanlee
   - 🇲🇽 MX 03 - kanlee
   - 🇲🇽 MX 04 - kanlee
+  - 🇲🇽 MX 05 - kanlee
+  - 🇲🇽 MX 06 - kanlee
+  - 🇲🇽 MX 07 - kanlee
+  - 🇲🇽 MX 08 - kanlee
 rules:
 - MATCH,PROXIES
