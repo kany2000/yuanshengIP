@@ -29,7 +29,49 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 04 - kanlee
+  type: vless
+  server: 203.137.165.164
+  port: 57554
+  uuid: e5b2a063-a114-4bd0-802d-b2da1fe1d1da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇨🇭 CH 05 - kanlee
+  type: vless
+  server: 185.18.250.245
+  port: 443
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
+- name: 🇨🇭 CH 06 - kanlee
+  type: vless
+  server: 116.204.164.17
+  port: 7443
+  uuid: ef8907eb-8bb5-4735-80f2-1d0068500d95
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +80,9 @@ proxy-groups:
   - 🇨🇭 CH 01 - kanlee
   - 🇨🇭 CH 02 - kanlee
   - 🇨🇭 CH 03 - kanlee
+  - 🇨🇭 CH 04 - kanlee
+  - 🇨🇭 CH 05 - kanlee
+  - 🇨🇭 CH 06 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +91,8 @@ proxy-groups:
   - 🇨🇭 CH 01 - kanlee
   - 🇨🇭 CH 02 - kanlee
   - 🇨🇭 CH 03 - kanlee
+  - 🇨🇭 CH 04 - kanlee
+  - 🇨🇭 CH 05 - kanlee
+  - 🇨🇭 CH 06 - kanlee
 rules:
 - MATCH,PROXIES

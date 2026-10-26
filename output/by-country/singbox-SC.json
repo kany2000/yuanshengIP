@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY 01 - kanlee",
-        "🇨🇾 CY 02 - kanlee"
+        "🇸🇨 SC 01 - kanlee",
+        "🇸🇨 SC 02 - kanlee"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY 01 - kanlee",
-        "🇨🇾 CY 02 - kanlee"
+        "🇸🇨 SC 01 - kanlee",
+        "🇸🇨 SC 02 - kanlee"
       ],
       "url": "https://www.google.com/generate_204"
     },
