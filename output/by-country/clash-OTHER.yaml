@@ -6,117 +6,19 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - kanlee
   type: vless
-  server: 104.17.50.227
+  server: 172.67.137.19
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 50414e45-4c5f-5a45-5553-5dd075c8ae9b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: web-app-gjn19f.z0zxy6ehuwgs.workers.dev
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /api/ws
     headers:
-      Host: jp3.yohototo.top
+      Host: web-app-gjn19f.z0zxy6ehuwgs.workers.dev
 - name: 🌐 其他地区 (Other) 02 - kanlee
-  type: vless
-  server: 104.16.10.104
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 03 - kanlee
-  type: vless
-  server: 104.16.111.195
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 04 - kanlee
-  type: vless
-  server: 104.16.111.102
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 05 - kanlee
-  type: vless
-  server: 104.16.10.72
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 06 - kanlee
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 07 - kanlee
-  type: vless
-  server: 104.24.31.89
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 08 - kanlee
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 09 - kanlee
   type: vless
   server: 104.16.10.2
   port: 443
@@ -130,133 +32,105 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 03 - kanlee
+  type: vless
+  server: 104.27.110.37
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-app-ji3j1z.app-wuuhuw.workers.dev
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
+- name: 🌐 其他地区 (Other) 04 - kanlee
+  type: vless
+  server: 104.27.110.37
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-app-ji3j1z.app-wuuhuw.workers.dev
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
+- name: 🌐 其他地区 (Other) 05 - kanlee
+  type: vless
+  server: 104.16.10.56
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 06 - kanlee
+  type: vless
+  server: 104.17.50.53
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 07 - kanlee
+  type: vless
+  server: 104.16.111.195
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 08 - kanlee
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: ec23f217-23a1-4f62-b98d-ba56070de89c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wallweb4.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: wallweb4.pages.dev
+- name: 🌐 其他地区 (Other) 09 - kanlee
+  type: vless
+  server: 104.21.33.59
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 10 - kanlee
-  type: vless
-  server: 104.21.219.160
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 11 - kanlee
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 12 - kanlee
-  type: vless
-  server: 104.19.48.107
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 13 - kanlee
-  type: vless
-  server: 104.27.46.35
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 14 - kanlee
-  type: vless
-  server: 104.19.48.107
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 15 - kanlee
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 16 - kanlee
-  type: vless
-  server: 104.16.0.1
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 17 - kanlee
-  type: vless
-  server: 104.18.42.98
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 18 - kanlee
-  type: vless
-  server: 104.17.210.74
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 19 - kanlee
   type: vless
   server: 104.21.0.87
   port: 443
@@ -270,9 +144,135 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 11 - kanlee
+  type: vless
+  server: 104.18.42.98
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 12 - kanlee
+  type: vless
+  server: 172.64.146.66
+  port: 443
+  uuid: 16e80f38-e97e-4b14-ba89-77d87a3e637f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ex3r.qzz.io
+  network: ws
+  ws-opts:
+    path: /sg-orcl
+    headers:
+      Host: ex3r.qzz.io
+- name: 🌐 其他地区 (Other) 13 - kanlee
+  type: vless
+  server: 104.24.31.89
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 14 - kanlee
+  type: vless
+  server: 188.114.97.6
+  port: 2053
+  uuid: 50414e45-4c5f-5a45-5553-6f51879c0594
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: levikoconfig.levikogjgfdd.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: levikoconfig.levikogjgfdd.ir
+- name: 🌐 其他地区 (Other) 15 - kanlee
+  type: vless
+  server: 104.17.210.74
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 16 - kanlee
+  type: vless
+  server: 104.27.124.133
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-app-ji3j1z.app-wuuhuw.workers.dev
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
+- name: 🌐 其他地区 (Other) 17 - kanlee
+  type: vless
+  server: 172.67.137.19
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-5dd075c8ae9b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-app-gjn19f.z0zxy6ehuwgs.workers.dev
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: web-app-gjn19f.z0zxy6ehuwgs.workers.dev
+- name: 🌐 其他地区 (Other) 18 - kanlee
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 19 - kanlee
+  type: vless
+  server: 172.64.149.65
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
 - name: 🌐 其他地区 (Other) 20 - kanlee
   type: vless
-  server: 162.159.254.3
+  server: 104.16.10.104
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -300,7 +300,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 22 - kanlee
   type: vless
-  server: 104.21.219.160
+  server: 162.159.254.3
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -314,7 +314,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 23 - kanlee
   type: vless
-  server: 104.19.12.94
+  server: 188.114.97.6
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -323,12 +323,12 @@ proxies:
   servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws#telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
+    path: /tyxyws
     headers:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 24 - kanlee
   type: vless
-  server: 162.159.254.3
+  server: 104.17.50.227
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -342,7 +342,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 25 - kanlee
   type: vless
-  server: 104.16.10.135
+  server: 104.27.46.35
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -354,6 +354,244 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 26 - kanlee
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 27 - kanlee
+  type: vless
+  server: 104.21.73.135
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-app-ji3j1z.app-wuuhuw.workers.dev
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
+- name: 🌐 其他地区 (Other) 28 - kanlee
+  type: vless
+  server: 104.18.41.190
+  port: 443
+  uuid: 16e80f38-e97e-4b14-ba89-77d87a3e637f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ex3r.qzz.io
+  network: ws
+  ws-opts:
+    path: /sg-orcl
+    headers:
+      Host: ex3r.qzz.io
+- name: 🌐 其他地区 (Other) 29 - kanlee
+  type: vless
+  server: 172.67.160.192
+  port: 443
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nuclear.us.kg
+  network: ws
+  ws-opts:
+    path: /free/103.101.153.32:443
+    headers:
+      Host: nuclear.us.kg
+- name: 🌐 其他地区 (Other) 30 - kanlee
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 31 - kanlee
+  type: vless
+  server: 172.67.145.14
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-app-ji3j1z.app-wuuhuw.workers.dev
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
+- name: 🌐 其他地区 (Other) 32 - kanlee
+  type: vless
+  server: 188.114.97.6
+  port: 2096
+  uuid: 50414e45-4c5f-5a45-5553-6f51879c0594
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: levikoconfig.levikogjgfdd.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: levikoconfig.levikogjgfdd.ir
+- name: 🌐 其他地区 (Other) 33 - kanlee
+  type: vless
+  server: 172.67.155.222
+  port: 443
+  uuid: 82b279c6-5cba-3a96-f8bd-780a00000035
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+- name: 🌐 其他地区 (Other) 34 - kanlee
+  type: vless
+  server: 188.114.97.6
+  port: 2087
+  uuid: 50414e45-4c5f-5a45-5553-6f51879c0594
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: levikoconfig.levikogjgfdd.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: levikoconfig.levikogjgfdd.ir
+- name: 🌐 其他地区 (Other) 35 - kanlee
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 36 - kanlee
+  type: vless
+  server: 104.21.14.232
+  port: 443
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nuclear.us.kg
+  network: ws
+  ws-opts:
+    path: /free/1.226.227.169:50001
+    headers:
+      Host: nuclear.us.kg
+- name: 🌐 其他地区 (Other) 37 - kanlee
+  type: vless
+  server: 104.24.0.1
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 38 - kanlee
+  type: vless
+  server: 104.16.111.202
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 39 - kanlee
+  type: vless
+  server: 104.16.111.195
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 40 - kanlee
+  type: vless
+  server: 172.64.149.88
+  port: 443
+  uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: top-e4s.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: top-e4s.pages.dev
+- name: 🌐 其他地区 (Other) 41 - kanlee
+  type: vless
+  server: 172.67.160.192
+  port: 443
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nuclear.us.kg
+  network: ws
+  ws-opts:
+    path: /free/1.226.227.169:50001
+    headers:
+      Host: nuclear.us.kg
+- name: 🌐 其他地区 (Other) 42 - kanlee
+  type: vless
+  server: 172.64.147.154
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -384,6 +622,23 @@ proxy-groups:
   - 🌐 其他地区 (Other) 23 - kanlee
   - 🌐 其他地区 (Other) 24 - kanlee
   - 🌐 其他地区 (Other) 25 - kanlee
+  - 🌐 其他地区 (Other) 26 - kanlee
+  - 🌐 其他地区 (Other) 27 - kanlee
+  - 🌐 其他地区 (Other) 28 - kanlee
+  - 🌐 其他地区 (Other) 29 - kanlee
+  - 🌐 其他地区 (Other) 30 - kanlee
+  - 🌐 其他地区 (Other) 31 - kanlee
+  - 🌐 其他地区 (Other) 32 - kanlee
+  - 🌐 其他地区 (Other) 33 - kanlee
+  - 🌐 其他地区 (Other) 34 - kanlee
+  - 🌐 其他地区 (Other) 35 - kanlee
+  - 🌐 其他地区 (Other) 36 - kanlee
+  - 🌐 其他地区 (Other) 37 - kanlee
+  - 🌐 其他地区 (Other) 38 - kanlee
+  - 🌐 其他地区 (Other) 39 - kanlee
+  - 🌐 其他地区 (Other) 40 - kanlee
+  - 🌐 其他地区 (Other) 41 - kanlee
+  - 🌐 其他地区 (Other) 42 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -414,5 +669,22 @@ proxy-groups:
   - 🌐 其他地区 (Other) 23 - kanlee
   - 🌐 其他地区 (Other) 24 - kanlee
   - 🌐 其他地区 (Other) 25 - kanlee
+  - 🌐 其他地区 (Other) 26 - kanlee
+  - 🌐 其他地区 (Other) 27 - kanlee
+  - 🌐 其他地区 (Other) 28 - kanlee
+  - 🌐 其他地区 (Other) 29 - kanlee
+  - 🌐 其他地区 (Other) 30 - kanlee
+  - 🌐 其他地区 (Other) 31 - kanlee
+  - 🌐 其他地区 (Other) 32 - kanlee
+  - 🌐 其他地区 (Other) 33 - kanlee
+  - 🌐 其他地区 (Other) 34 - kanlee
+  - 🌐 其他地区 (Other) 35 - kanlee
+  - 🌐 其他地区 (Other) 36 - kanlee
+  - 🌐 其他地区 (Other) 37 - kanlee
+  - 🌐 其他地区 (Other) 38 - kanlee
+  - 🌐 其他地区 (Other) 39 - kanlee
+  - 🌐 其他地区 (Other) 40 - kanlee
+  - 🌐 其他地区 (Other) 41 - kanlee
+  - 🌐 其他地区 (Other) 42 - kanlee
 rules:
 - MATCH,PROXIES
