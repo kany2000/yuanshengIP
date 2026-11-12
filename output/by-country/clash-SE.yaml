@@ -13,8 +13,8 @@ proxies:
   udp: true
 - name: 🇸🇪 SE 02 - kanlee
   type: vless
-  server: 109.120.134.181
-  port: 443
+  server: 138.124.49.108
+  port: 8443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
@@ -26,20 +26,6 @@ proxies:
     headers:
       Host: fs.qicai99.com
 - name: 🇸🇪 SE 03 - kanlee
-  type: vless
-  server: 138.124.124.157
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇸🇪 SE 04 - kanlee
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -60,7 +46,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - kanlee
   - 🇸🇪 SE 02 - kanlee
   - 🇸🇪 SE 03 - kanlee
-  - 🇸🇪 SE 04 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,6 +54,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - kanlee
   - 🇸🇪 SE 02 - kanlee
   - 🇸🇪 SE 03 - kanlee
-  - 🇸🇪 SE 04 - kanlee
 rules:
 - MATCH,PROXIES
