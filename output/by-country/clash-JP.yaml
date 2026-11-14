@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - kanlee
   type: vless
-  server: 216.167.127.197
+  server: 43.170.8.95
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -19,19 +19,12 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 02 - kanlee
-  type: vless
-  server: 104.17.50.227
+  type: ss
+  server: 149.22.87.240
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 03 - kanlee
   type: vless
   server: 172.67.217.240
@@ -47,132 +40,34 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 04 - kanlee
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: ss
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 05 - kanlee
   type: vless
-  server: 46.250.248.210
+  server: 172.67.217.240
   port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fs.qicai99.com
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /tyxyws
     headers:
-      Host: fs.qicai99.com
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 06 - kanlee
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 07 - kanlee
-  type: vless
-  server: 64.178.113.127
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 08 - kanlee
-  type: vless
-  server: 154.40.36.220
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 09 - kanlee
-  type: vless
-  server: 104.18.42.98
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 10 - kanlee
-  type: vless
-  server: 45.66.129.12
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 11 - kanlee
-  type: vless
-  server: 104.19.164.155
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 12 - kanlee
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 13 - kanlee
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 14 - kanlee
   type: vless
   server: 43.170.8.95
   port: 443
@@ -186,49 +81,14 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 15 - kanlee
-  type: vless
-  server: 104.19.33.25
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+- name: 🇯🇵 日本 (Japan) 08 - kanlee
+  type: ss
+  server: 168.138.205.100
+  port: 53758
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 16 - kanlee
-  type: vless
-  server: 154.31.114.162
-  port: 8443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 17 - kanlee
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 18 - kanlee
+- name: 🇯🇵 日本 (Japan) 09 - kanlee
   type: vless
   server: 104.17.50.227
   port: 443
@@ -242,126 +102,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 19 - kanlee
-  type: vless
-  server: 104.19.48.107
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 20 - kanlee
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 21 - kanlee
-  type: vless
-  server: 154.31.114.162
-  port: 8443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 22 - kanlee
-  type: vless
-  server: 104.16.10.48
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 23 - kanlee
-  type: vless
-  server: 104.21.34.106
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 24 - kanlee
-  type: vless
-  server: 45.129.8.204
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 25 - kanlee
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 26 - kanlee
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 27 - kanlee
-  type: vless
-  server: 104.16.0.1
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 28 - kanlee
+- name: 🇯🇵 日本 (Japan) 10 - kanlee
   type: vless
   server: 172.64.190.13
   port: 443
@@ -375,93 +116,16 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 29 - kanlee
-  type: vless
-  server: 104.21.219.160
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 30 - kanlee
-  type: vless
-  server: 104.16.10.56
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 31 - kanlee
-  type: vless
-  server: 104.21.219.160
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 32 - kanlee
-  type: ss
-  server: 168.138.205.100
-  port: 53758
-  cipher: aes-128-gcm
-  password: Bwlqh7GcFB
-  udp: true
-- name: 🇯🇵 日本 (Japan) 33 - kanlee
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 34 - kanlee
-  type: vless
-  server: 62.106.75.37
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 35 - kanlee
+- name: 🇯🇵 日本 (Japan) 11 - kanlee
   type: ss
   server: 84.247.155.196
-  port: 80
+  port: 443
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 36 - kanlee
+- name: 🇯🇵 日本 (Japan) 12 - kanlee
   type: vless
-  server: 172.67.217.240
+  server: 162.159.254.3
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -473,9 +137,44 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 37 - kanlee
+- name: 🇯🇵 日本 (Japan) 13 - kanlee
   type: vless
-  server: 172.67.217.240
+  server: 154.31.114.162
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 14 - kanlee
+  type: vless
+  server: 13.140.248.125
+  port: 443
+  uuid: 4f82d72b-9644-c39a-ac6b-abbf15a862aa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xray-p1vi234h-lunar-forest-6.cloady.io
+  network: ws
+  ws-opts:
+    path: /e3e2aa65089989f0
+    headers:
+      Host: xray-p1vi234h-lunar-forest-6.cloady.io
+- name: 🇯🇵 日本 (Japan) 15 - kanlee
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 16 - kanlee
+  type: vless
+  server: 45.142.126.184
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -508,27 +207,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 14 - kanlee
   - 🇯🇵 日本 (Japan) 15 - kanlee
   - 🇯🇵 日本 (Japan) 16 - kanlee
-  - 🇯🇵 日本 (Japan) 17 - kanlee
-  - 🇯🇵 日本 (Japan) 18 - kanlee
-  - 🇯🇵 日本 (Japan) 19 - kanlee
-  - 🇯🇵 日本 (Japan) 20 - kanlee
-  - 🇯🇵 日本 (Japan) 21 - kanlee
-  - 🇯🇵 日本 (Japan) 22 - kanlee
-  - 🇯🇵 日本 (Japan) 23 - kanlee
-  - 🇯🇵 日本 (Japan) 24 - kanlee
-  - 🇯🇵 日本 (Japan) 25 - kanlee
-  - 🇯🇵 日本 (Japan) 26 - kanlee
-  - 🇯🇵 日本 (Japan) 27 - kanlee
-  - 🇯🇵 日本 (Japan) 28 - kanlee
-  - 🇯🇵 日本 (Japan) 29 - kanlee
-  - 🇯🇵 日本 (Japan) 30 - kanlee
-  - 🇯🇵 日本 (Japan) 31 - kanlee
-  - 🇯🇵 日本 (Japan) 32 - kanlee
-  - 🇯🇵 日本 (Japan) 33 - kanlee
-  - 🇯🇵 日本 (Japan) 34 - kanlee
-  - 🇯🇵 日本 (Japan) 35 - kanlee
-  - 🇯🇵 日本 (Japan) 36 - kanlee
-  - 🇯🇵 日本 (Japan) 37 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -550,26 +228,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 14 - kanlee
   - 🇯🇵 日本 (Japan) 15 - kanlee
   - 🇯🇵 日本 (Japan) 16 - kanlee
-  - 🇯🇵 日本 (Japan) 17 - kanlee
-  - 🇯🇵 日本 (Japan) 18 - kanlee
-  - 🇯🇵 日本 (Japan) 19 - kanlee
-  - 🇯🇵 日本 (Japan) 20 - kanlee
-  - 🇯🇵 日本 (Japan) 21 - kanlee
-  - 🇯🇵 日本 (Japan) 22 - kanlee
-  - 🇯🇵 日本 (Japan) 23 - kanlee
-  - 🇯🇵 日本 (Japan) 24 - kanlee
-  - 🇯🇵 日本 (Japan) 25 - kanlee
-  - 🇯🇵 日本 (Japan) 26 - kanlee
-  - 🇯🇵 日本 (Japan) 27 - kanlee
-  - 🇯🇵 日本 (Japan) 28 - kanlee
-  - 🇯🇵 日本 (Japan) 29 - kanlee
-  - 🇯🇵 日本 (Japan) 30 - kanlee
-  - 🇯🇵 日本 (Japan) 31 - kanlee
-  - 🇯🇵 日本 (Japan) 32 - kanlee
-  - 🇯🇵 日本 (Japan) 33 - kanlee
-  - 🇯🇵 日本 (Japan) 34 - kanlee
-  - 🇯🇵 日本 (Japan) 35 - kanlee
-  - 🇯🇵 日本 (Japan) 36 - kanlee
-  - 🇯🇵 日本 (Japan) 37 - kanlee
 rules:
 - MATCH,PROXIES
