@@ -5,11 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - kanlee
+  type: vless
+  server: bookend.filnex.baby
+  port: 443
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hollowreed.gerqix.online
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: bookend.filnex.baby
+- name: 🇷🇺 俄罗斯 (Russia) 02 - kanlee
   type: ss
-  server: 90.156.203.62
-  port: 5112
+  server: 130.49.189.158
+  port: 43558
   cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -17,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - kanlee
+  - 🇷🇺 俄罗斯 (Russia) 02 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - kanlee
+  - 🇷🇺 俄罗斯 (Russia) 02 - kanlee
 rules:
 - MATCH,PROXIES
