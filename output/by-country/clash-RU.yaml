@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - kanlee
   type: vless
-  server: 147.45.175.81
+  server: mimowhat.online
   port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  uuid: 37fc45b0-be4d-4920-a0f7-7389e406f5f3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xsru2.freeddns.org
+  servername: mimowhat.online
   network: ws
   ws-opts:
-    path: /wsru
+    path: /content/session/24143d1e15019b9c79a3b463/
     headers:
-      Host: xsru2.freeddns.org
+      Host: mimowhat.online
 - name: 🇷🇺 俄罗斯 (Russia) 02 - kanlee
   type: vless
   server: 136.148.83.69
@@ -37,49 +37,26 @@ proxies:
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 04 - kanlee
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 05 - kanlee
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - kanlee
+- name: 🇷🇺 俄罗斯 (Russia) 05 - kanlee
   type: vless
-  server: 185.178.208.167
+  server: 147.45.175.81
   port: 443
-  uuid: ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: unlik.club
+  servername: xsru2.freeddns.org
   network: ws
   ws-opts:
-    path: /static/telemetry/3c9aaef00005/
+    path: /wsru
     headers:
-      Host: tochkacdn.top
-- name: 🇷🇺 俄罗斯 (Russia) 07 - kanlee
-  type: vless
-  server: 185.178.208.167
-  port: 443
-  uuid: ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: unlik.club
-  network: ws
-  ws-opts:
-    path: /static/telemetry/3c9aaef00005/
-    headers:
-      Host: tochkacdn.top
+      Host: xsru2.freeddns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,8 +67,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - kanlee
   - 🇷🇺 俄罗斯 (Russia) 04 - kanlee
   - 🇷🇺 俄罗斯 (Russia) 05 - kanlee
-  - 🇷🇺 俄罗斯 (Russia) 06 - kanlee
-  - 🇷🇺 俄罗斯 (Russia) 07 - kanlee
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,7 +77,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - kanlee
   - 🇷🇺 俄罗斯 (Russia) 04 - kanlee
   - 🇷🇺 俄罗斯 (Russia) 05 - kanlee
-  - 🇷🇺 俄罗斯 (Russia) 06 - kanlee
-  - 🇷🇺 俄罗斯 (Russia) 07 - kanlee
 rules:
 - MATCH,PROXIES
