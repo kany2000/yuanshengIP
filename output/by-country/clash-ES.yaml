@@ -26,13 +26,6 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 04 - kanlee
-  type: ss
-  server: 79.127.139.242
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 05 - kanlee
   type: vless
   server: 194.76.168.133
   port: 443
@@ -46,6 +39,13 @@ proxies:
     path: /realtime/client/connect
     headers:
       Host: nemicro487.gangtype.com
+- name: 🇪🇸 西班牙 (Spain) 05 - kanlee
+  type: ss
+  server: 79.127.139.242
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
